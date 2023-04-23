@@ -1,3 +1,9 @@
-with open('Ex_1.txt', 'w') as file:
-    file_contents = file.read()
-    print(file_contents)
+try:
+  
+    with open('filename.txt', 'r') as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError:
+    print("Fail not found.")
+except:
+    print("Error.")
