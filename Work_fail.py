@@ -1,7 +1,7 @@
 try:
     with open('MyDocument.txt', 'r') as file:
         content = file.read()
-        old_str = input "Enter the string to be replaced "
+        old_str = input ("Enter the string to be replaced: ")
         new_str = "New line"
         new_content = content.replace(old_str, new_str)
     with open('MyDocument.txt', 'w') as file:
