@@ -1,6 +1,6 @@
 try:
-    file = open('Biografy.txt', 'r')
-    content = file.read()
+    _file = open('Biografy.txt', 'r')
+    content = _file.read()
     if 'Yevhen Kobchuk' in content:
         print('Row found')
     else:
