@@ -1,6 +1,6 @@
 try:
-    with open('MyDocument.txt', 'r') as file:
-        content = file.read()
+    with open('MyDocument.txt', 'r') as _file:
+        content = _file.read()
         words = content.split()
         numbers = []
         for word in words:
