@@ -1,6 +1,6 @@
 try:
-    with open('MyDocument.txt', 'r') as file:
-        content = file.read()
+    with open('MyDocument.txt', 'r') as _file:
+        content = _file.read()
         lines = content.split('\n')
         n = int(input("Enter quantity lines: "))
         print("Last", n, "lines:")
