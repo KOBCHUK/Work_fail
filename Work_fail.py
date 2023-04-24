@@ -1,6 +1,6 @@
 try:
-    with open('MyDocument.txt', 'r') as file:
-        content = file.read()
+    with open('MyDocument.txt', 'r') as _file:
+        content = _file.read()
         lines = content.split('\n')
         search_word = input("Enter world for search: ")
         matching_lines = [line for line in lines if search_word in line]
